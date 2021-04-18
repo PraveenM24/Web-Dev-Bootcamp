@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./index.css">
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+      <form method="post">
+
+        <h1> Sign Up </h1>
+        <fieldset>
+          <legend><span class="number">1</span> Your Basic Info</legend>
+          <label for="name">Name:&emsp; <span id="nameError"> </span></label>
+          <input type="text" id="name" name="user_name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password" required>
+
+          <label>Age:</label>
+          <input type="number" id="age" name="user_age" required>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">2</span> Your Profile</legend>
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+          <label for="job">Job Role:</label>
+          <select id="job" name="user_job">
+            <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer">Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="wordpress_developer">Wordpress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="android_developer">Android Developer</option>
+              <option value="ios_developer">IOS Developer</option>
+              <option value="mobile_designer">Mobile Designer</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup>
+          </select>
+          <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light"
+            for="development">Development</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light"
+            for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light"
+            for="business">Business</label>
+        </fieldset>
+        <button type="button" onclick="validate()">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
