@@ -1,6 +1,18 @@
-###### WeB Development Bootcamp
+###### Web Development Bootcamp
 
 <p style="font-family: Arial">This is an initiative taken to help students of TPGIT to learn Web Development from scratch</p>
+
+<br/>
+
+###### How to download the code?
+<p style="font-family: Arial">You can clone the repository by using,</p>
+
+```
+git clone https://github.com/PraveenM24/Web-Dev-Bootcamp
+```
+
+<p style="font-family: Arial">You can also download the code as a <a href="https://github.com/PraveenM24/Web-Dev-Bootcamp/archive/refs/heads/main.zip">.zip</a> file
+</p>
 
 <br/>
 
